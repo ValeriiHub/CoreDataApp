@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3870915926A346A100E76C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870915826A346A100E76C91 /* AppDelegate.swift */; };
-		3870915B26A346A100E76C91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870915A26A346A100E76C91 /* SceneDelegate.swift */; };
 		3870915D26A346A100E76C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870915C26A346A100E76C91 /* ViewController.swift */; };
-		3870916026A346A100E76C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3870915E26A346A100E76C91 /* Main.storyboard */; };
 		3870916326A346A100E76C91 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3870916126A346A100E76C91 /* CoreDataApp.xcdatamodeld */; };
 		3870916526A346A600E76C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3870916426A346A600E76C91 /* Assets.xcassets */; };
 		3870916826A346A600E76C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3870916626A346A600E76C91 /* LaunchScreen.storyboard */; };
@@ -19,9 +17,7 @@
 /* Begin PBXFileReference section */
 		3870915526A346A100E76C91 /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3870915826A346A100E76C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3870915A26A346A100E76C91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3870915C26A346A100E76C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3870915F26A346A100E76C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3870916226A346A100E76C91 /* CoreDataApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataApp.xcdatamodel; sourceTree = "<group>"; };
 		3870916426A346A600E76C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3870916726A346A600E76C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,9 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				3870915826A346A100E76C91 /* AppDelegate.swift */,
-				3870915A26A346A100E76C91 /* SceneDelegate.swift */,
 				3870915C26A346A100E76C91 /* ViewController.swift */,
-				3870915E26A346A100E76C91 /* Main.storyboard */,
 				3870916426A346A600E76C91 /* Assets.xcassets */,
 				3870916626A346A600E76C91 /* LaunchScreen.storyboard */,
 				3870916926A346A600E76C91 /* Info.plist */,
@@ -129,7 +123,6 @@
 			files = (
 				3870916826A346A600E76C91 /* LaunchScreen.storyboard in Resources */,
 				3870916526A346A600E76C91 /* Assets.xcassets in Resources */,
-				3870916026A346A100E76C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,21 +136,12 @@
 				3870916326A346A100E76C91 /* CoreDataApp.xcdatamodeld in Sources */,
 				3870915D26A346A100E76C91 /* ViewController.swift in Sources */,
 				3870915926A346A100E76C91 /* AppDelegate.swift in Sources */,
-				3870915B26A346A100E76C91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3870915E26A346A100E76C91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3870915F26A346A100E76C91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3870916626A346A600E76C91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 529RQ8FURU;
 				INFOPLIST_FILE = CoreDataApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 529RQ8FURU;
 				INFOPLIST_FILE = CoreDataApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
