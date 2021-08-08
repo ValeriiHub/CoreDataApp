@@ -14,7 +14,7 @@ class ViewController: UITableViewController {
     private var tasks: [Task] = []
     
     // managed object contex
-    private let managedContex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private let managedContex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext  // добираемся до AppDelegate, а затем до persistentContainer и его свойства viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -145,4 +145,19 @@ extension ViewController {
 
         return cell
     }
+    
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        managedContex.delete(tasks[indexPath.row])
+        
+        do {
+            try managedContex.save()
+            tasks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
 }
